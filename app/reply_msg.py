@@ -1,5 +1,4 @@
-from app import app, handler, line_bot_api
-
+from app import handler, line_bot_api
 
 from linebot.exceptions import (
     InvalidSignatureError
@@ -8,9 +7,6 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
-
-
-
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):

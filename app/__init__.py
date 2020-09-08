@@ -4,13 +4,9 @@ from flask import request, abort
 from linebot.exceptions import (
     InvalidSignatureError
 )
-
 from linebot import (
     LineBotApi, WebhookHandler
 )
-
-
-
 import configparser
 config = configparser.ConfigParser()
 config.read("./utils/configure.ini")
@@ -28,7 +24,7 @@ def callback():
 
     # get request body as text
     body = request.get_data(as_text=True)
-    app.logger.info("Request body: " + body)
+    #app.logger.info("Request body: " + body)
 
     # handle webhook body
     try:
@@ -39,4 +35,4 @@ def callback():
 
     return 'OK'
 
-from app.reply_msg import handle_message
+from app import reply_msg, join_event
