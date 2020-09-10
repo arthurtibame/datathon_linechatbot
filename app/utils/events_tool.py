@@ -19,4 +19,12 @@ def timestamp_converter(timestamp) -> str(datetime):
     return str_datetime
 
 def logs_handler(logs):
-    return True
+    """[summary]
+
+    Args:
+        message types:
+            text, sticker, audio, location, image, video
+            
+    """
+    logs = event2json(logs)['events'][0]
+    print(logs)
