@@ -45,6 +45,6 @@ def udpate_location(event):
     user.longitude =  event.message.longitude
     user.latitude = event.message.latitude    
     db.session.commit()
-    return True
+    return "updated location"
     
         

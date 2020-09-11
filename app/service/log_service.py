@@ -13,4 +13,4 @@ def insert_log(logs):
     new_log = Log(user_id=user_id, message_type=message_type, message=message)
     db.session.add(new_log)    
     db.session.commit()
-    return True
+    return "Inserted log"
