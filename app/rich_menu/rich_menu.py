@@ -30,7 +30,7 @@ rich_menu_to_create = RichMenu(
 
         RichMenuArea(
             bounds=RichMenuBounds(x=1653, y=1101, width=847, height=595),
-            action=URIAction(label='Reference', uri="https://github.com/line/line-bot-sdk-python")
+            action=URIAction(label='Reference', uri="https://github.com/arthurtibame/datathon_linechatbot")
         ),
         RichMenuArea(
             bounds=RichMenuBounds(x=736, y=594, width=1017, height=476),

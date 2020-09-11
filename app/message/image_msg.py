@@ -19,18 +19,17 @@ def handler_image_message(event):
     """
     # Step 1. Get message_id
     message_content = line_bot_api.get_message_content(event.message.id)
-    file_name = f"{event.message.id }.mp4"
+    file_name = f"{event.message.id }.jpg"
 
     # write iamge by message content (from user sent)
     with open(file_name, "wb") as fd:
         for chunk in message_content.iter_content():
-            fd.write(chunk)
-    from app.utils.events_tool import logs_handler
-    print("++++++++",event) 
+            fd.write(chunk)    
+    
     line_bot_api.reply_message(
         event.reply_token,
         [
             TextSendMessage(text=f"Image saved ! {file_name}"),
-            TextSendMessage(text=f"Image {file_name}  is uploader to AWS S3 !"),
+            
         ],
     )

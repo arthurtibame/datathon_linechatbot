@@ -8,9 +8,14 @@ from linebot.models import(
 )
 
 @handler.add(MessageEvent, message=LocationMessage)
-def location_handler(event):
-    print(event.message)
+def location_handler(event):    
+    from app.service.user_service import udpate_location
+    res = udpate_location(event)
+    print(res)
     line_bot_api.reply_message( 
-    event.reply_token,
-    TextSendMessage(text="收到位置"))
+        event.reply_token,
+        TextSendMessage(text="已更新您的位置 !"))
+    
+    
+
 

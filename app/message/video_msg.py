@@ -5,7 +5,7 @@ from linebot.models import(
 )
 
 @handler.add(MessageEvent, message=VideoMessage)
-def handler_image_message(event):
+def handler_video_message(event):
     """[summary]
 
     Args:
@@ -25,12 +25,10 @@ def handler_image_message(event):
     with open(file_name, "wb") as fd:
         for chunk in message_content.iter_content():
             fd.write(chunk)
-    from app.utils.events_tool import logs_handler
-    print("++++++++",event) 
+     
     line_bot_api.reply_message(
         event.reply_token,
         [
-            TextSendMessage(text=f"Video saved ! {file_name}"),
-            TextSendMessage(text=f"Video {file_name}  is uploader to AWS S3 !"),
+            TextSendMessage(text=f"Video saved ! {file_name}"),            
         ],
     )
