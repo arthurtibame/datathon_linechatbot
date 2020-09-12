@@ -1,6 +1,7 @@
 from app import db
 from app.model.user_model import User
 
+
 def check_user(user_id):
     user = User.query.filter_by(user_id=user_id).first()
     if user:

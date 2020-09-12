@@ -61,5 +61,5 @@ from app.rich_menu import (
 )
 
 from app.utils import (
-    events_tool, kafka_logs
+    events_tool
 )
