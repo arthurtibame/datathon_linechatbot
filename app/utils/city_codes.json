@@ -1,0 +1,112 @@
+[
+  {
+    "CityCode": "63",
+    "CityName_Ch": "臺北市",
+    "CityName_En": "Taipei City"
+  },
+  {
+    "CityCode": "64",
+    "CityName_Ch": "高雄市",
+    "CityName_En": "Kaohsiung City"
+  },
+  {
+    "CityCode": "65",
+    "CityName_Ch": "新北市",
+    "CityName_En": "New Taipei City"
+  },
+  {
+    "CityCode": "10017",
+    "CityName_Ch": "基隆市",
+    "CityName_En": "Keelung City"
+  },
+  {
+    "CityCode": "68",
+    "CityName_Ch": "桃園市",
+    "CityName_En": "Taoyuan City"
+  },
+  {
+    "CityCode": "10004",
+    "CityName_Ch": "新竹縣",
+    "CityName_En": "Hsinchu County"
+  },
+  {
+    "CityCode": "10018",
+    "CityName_Ch": "新竹市",
+    "CityName_En": "Hsinchu City"
+  },
+  {
+    "CityCode": "10005",
+    "CityName_Ch": "苗栗縣",
+    "CityName_En": "Miaoli County"
+  },
+  {
+    "CityCode": "66",
+    "CityName_Ch": "臺中市",
+    "CityName_En": "Taichung City"
+  },
+  {
+    "CityCode": "10008",
+    "CityName_Ch": "南投縣",
+    "CityName_En": "Nantou County"
+  },
+  {
+    "CityCode": "10007",
+    "CityName_Ch": "彰化縣",
+    "CityName_En": "Changhua County"
+  },
+  {
+    "CityCode": "10009",
+    "CityName_Ch": "雲林縣",
+    "CityName_En": "Yunlin County"
+  },
+  {
+    "CityCode": "10010",
+    "CityName_Ch": "嘉義縣",
+    "CityName_En": "Chiayi County"
+  },
+  {
+    "CityCode": "10020",
+    "CityName_Ch": "嘉義市",
+    "CityName_En": "Chiayi City"
+  },
+  {
+    "CityCode": "67",
+    "CityName_Ch": "臺南市",
+    "CityName_En": "Tainan City"
+  },
+  {
+    "CityCode": "10013",
+    "CityName_Ch": "屏東縣",
+    "CityName_En": "Pingtung County"
+  },
+  {
+    "CityCode": "10002",
+    "CityName_Ch": "宜蘭縣",
+    "CityName_En": "Yilan County"
+  },
+  {
+    "CityCode": "10015",
+    "CityName_Ch": "花蓮縣",
+    "CityName_En": "Hualien County"
+  },
+  {
+    "CityCode": "10014",
+    "CityName_Ch": "臺東縣",
+    "CityName_En": "Taitung County"
+  },
+  {
+    "CityCode": "10016",
+    "CityName_Ch": "澎湖縣",
+    "CityName_En": "Penghu County"
+  },
+  {
+    "CityCode": "09020",
+    "CityName_Ch": "金門縣",
+    "CityName_En": "Kinmen County"
+  },
+  {
+    "CityCode": "09007",
+    "CityName_Ch": "連江縣",
+    "CityName_En": "Lienchiang County"
+  }
+]

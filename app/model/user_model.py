@@ -9,11 +9,13 @@ class User(db.Model):
     picture_url = db.Column(db.String(500))
     longitude = db.Column(db.Float)
     latitude = db.Column(db.Float)
+    city = db.Column(db.String(10))
+    town = db.Column(db.String(10))
     address = db.Column(db.String(500))
     create_time= db.Column(db.DateTime, default=datetime.utcnow)
     modify_time = db.Column(db.DateTime, default=datetime.utcnow)
 
-    def __init__(self, user_id,  user_name,language=None, picture_url=None, longitude=None, latitude=None, address=None) -> None:
+    def __init__(self, user_id,  user_name,language=None, picture_url=None, longitude=None, latitude=None, address=None, town=None, city=None) -> None:
         self.user_id = user_id
         self.user_name=user_name
         self.language=language
@@ -21,3 +23,6 @@ class User(db.Model):
         self.longitude=longitude
         self.latitude=latitude
         self.address = address
+        self.town = town 
+        self.city = city
+        
