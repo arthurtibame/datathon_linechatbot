@@ -1,7 +1,7 @@
 from app import line_bot_api
 from linebot.models import (
     RichMenuArea, RichMenu, RichMenuBounds, RichMenuSize,  
-    MessageAction, URIAction
+    MessageAction, URIAction, ImagemapAction
 
 )
 
@@ -13,11 +13,11 @@ rich_menu_to_create = RichMenu(
     areas=[
         RichMenuArea(
             bounds=RichMenuBounds(x=721, y=0, width=1038, height=576),
-            action=MessageAction(label='None1', text="尚未開發")
+            action=MessageAction(label='History', text="History of flooding area")
         ),
         RichMenuArea(
             bounds=RichMenuBounds(x=1767, y=0, width=733, height=690),
-            action=MessageAction(label='None2', text="尚未開發")
+            action=MessageAction(label='Damage', text="Damage level")
         ),
         RichMenuArea(
             bounds=RichMenuBounds(x=0, y=1097, width=869, height=589),
@@ -30,7 +30,7 @@ rich_menu_to_create = RichMenu(
 
         RichMenuArea(
             bounds=RichMenuBounds(x=1653, y=1101, width=847, height=595),
-            action=URIAction(label='Reference', uri="https://github.com/arthurtibame/datathon_linechatbot")
+            action=MessageAction(label='heat', text="Disaster supply heat map")
         ),
         RichMenuArea(
             bounds=RichMenuBounds(x=736, y=594, width=1017, height=476),
@@ -41,7 +41,7 @@ rich_menu_to_create = RichMenu(
 rich_menu_id = line_bot_api.create_rich_menu(rich_menu=rich_menu_to_create)
 # print(rich_menu_id)
 
-with open("./app/static/image/04.jpg", 'rb') as f:
+with open("./app/static/image/final.jpg", 'rb') as f:
     line_bot_api.set_rich_menu_image(rich_menu_id,  "image/png", f)
 line_bot_api.set_default_rich_menu(rich_menu_id)    
 print("done!")  
