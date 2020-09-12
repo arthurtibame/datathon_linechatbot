@@ -47,6 +47,7 @@ def callback():
         abort(400)
 
     return 'OK'
+
 from app.model import user_model, log_model
 from app.service import user_service, log_service, flooding_service
 
@@ -62,4 +63,3 @@ from app.rich_menu import (
 from app.utils import (
     events_tool, kafka_logs
 )
-

@@ -1,7 +1,6 @@
-from app import db
 from app.model.user_model import User
 from app.utils.flood_api import flooding_town
-from app import line_bot_api
+from app import line_bot_api, app
 from linebot.models import (
     TextSendMessage
 )
@@ -21,9 +20,10 @@ a= [{
     "AffectedArea": "三芝區-後厝里,古庄里,埔頭里,圓山里,新庄里,福德里,橫山里,興華里,錫板里,店子里,埔坪里,八賢里,中正路"
   }]
 
+@app.route("/check", methods=["GET", "POST"])
 def check_flooding_users():
     # flooding_towns = flooding_town()
-    flooding_towns = flooding_town()
+    flooding_towns = a
     for town in flooding_towns:
         town_code = town['TownCode']
         users = User.query.filter_by(town=town_code).all()
@@ -35,5 +35,8 @@ def check_flooding_users():
             .format(town["AffectedArea"][:3], town["H1"],town["H3"],town["H6"],town["H12"],town["H24"],town["WarningLevel"])
 
         line_bot_api.multicast(tmp_user_id_list, TextSendMessage(text=send_text))
+    return True
+
+
 if __name__ == "__main__":
     print(check_flooding_users())
