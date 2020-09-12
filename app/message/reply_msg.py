@@ -14,3 +14,6 @@ def handle_message(event):
         line_bot_api.reply_message( 
             event.reply_token,
             TextSendMessage(text="謝謝您, 隨時歡迎更新位置"))
+    elif event.message.text == "test":
+        from  app.service.flooding_service import check_flooding_users
+        check_flooding_users()

@@ -1,0 +1,54 @@
+[
+    {
+      "TownCode": "1001501",
+      "TownName": "花蓮市"
+    },
+    {
+      "TownCode": "1001504",
+      "TownName": "新城鄉"
+    },
+    {
+      "TownCode": "1001511",
+      "TownName": "秀林鄉"
+    },
+    {
+      "TownCode": "1001505",
+      "TownName": "吉安鄉"
+    },
+    {
+      "TownCode": "1001506",
+      "TownName": "壽豐鄉"
+    },
+    {
+      "TownCode": "1001502",
+      "TownName": "鳳林鎮"
+    },
+    {
+      "TownCode": "1001507",
+      "TownName": "光復鄉"
+    },
+    {
+      "TownCode": "1001508",
+      "TownName": "豐濱鄉"
+    },
+    {
+      "TownCode": "1001509",
+      "TownName": "瑞穗鄉"
+    },
+    {
+      "TownCode": "1001512",
+      "TownName": "萬榮鄉"
+    },
+    {
+      "TownCode": "1001503",
+      "TownName": "玉里鎮"
+    },
+    {
+      "TownCode": "1001513",
+      "TownName": "卓溪鄉"
+    },
+    {
+      "TownCode": "1001510",
+      "TownName": "富里鄉"
+    }
+  ]

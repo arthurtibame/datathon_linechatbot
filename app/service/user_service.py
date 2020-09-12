@@ -53,6 +53,8 @@ def udpate_location(event):
     return "updated location"
     
 def addr_transfer(language, addr):
+    # addr_transferred = zh_addr_transfer(addr)
+    # return addr_transferred
     if language == "en":
         addr_transferred = en_addr_transfer(addr)
         return addr_transferred
@@ -71,25 +73,40 @@ def en_addr_transfer(addr):
     """
     tmp_list = addr.split(",")       
     tmp_list = [f.strip() for f in tmp_list[-3:-1]]
-    city = city2code_en(tmp_list[1])
-    print(city, tmp_list)
-    
+    city = city2code(tmp_list[1], "en")
+       
     return [tmp_list[0], city]
 
 def zh_addr_transfer(addr):
-    city = addr[5:8]
+    city_code = city2code(addr[5:8], "zh")
     chk_district = addr[8:]
     sep_words = ["區", "鄉", "鎮", "市"]
     town=""
     for counter in range(len(chk_district)):
         if chk_district[counter] in sep_words:
             town = chk_district[:counter+1]
-    return [city, town]
+    town_code =town2code(city_code=city_code, town=town)
 
-def city2code_en(city):
+    return [city_code, town_code]
+
+def town2code(city_code, town):
+    import json
+    with open(f"./app/utils/districts/{city_code}.json", mode="r", encoding="utf8") as json_file:
+        data = json.load(json_file)
+    for json in data:
+        if town==json["TownName"]:
+            return json["TownCode"]
+    return False
+
+def city2code(city, language):
     import json
     with open("./app/utils/city_codes.json", mode="r", encoding="utf8") as json_file:
         data = json.load(json_file)
-    for json in data:
-        if city == json["CityName_En"]:
-            return json["CityCode"]
+    if language == "en":
+        for json in data:
+            if city == json["CityName_En"]:
+                return json["CityCode"]
+    else:
+        for json in data:
+            if city == json["CityName_Ch"]:
+                return json["CityCode"]

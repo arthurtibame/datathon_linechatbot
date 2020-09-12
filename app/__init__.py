@@ -48,7 +48,7 @@ def callback():
 
     return 'OK'
 from app.model import user_model, log_model
-from app.service import user_service, log_service
+from app.service import user_service, log_service, flooding_service
 
 from app.message import (
     reply_msg, join_event_msg, quick_reply_msg, location_msg, image_msg,

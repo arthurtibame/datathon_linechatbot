@@ -1,0 +1,118 @@
+[
+    {
+      "TownCode": "6600100",
+      "TownName": "中區"
+    },
+    {
+      "TownCode": "6600200",
+      "TownName": "東區"
+    },
+    {
+      "TownCode": "6600300",
+      "TownName": "南區"
+    },
+    {
+      "TownCode": "6600400",
+      "TownName": "西區"
+    },
+    {
+      "TownCode": "6600500",
+      "TownName": "北區"
+    },
+    {
+      "TownCode": "6600800",
+      "TownName": "北屯區"
+    },
+    {
+      "TownCode": "6600600",
+      "TownName": "西屯區"
+    },
+    {
+      "TownCode": "6600700",
+      "TownName": "南屯區"
+    },
+    {
+      "TownCode": "6602700",
+      "TownName": "太平區"
+    },
+    {
+      "TownCode": "6602800",
+      "TownName": "大里區"
+    },
+    {
+      "TownCode": "6602600",
+      "TownName": "霧峰區"
+    },
+    {
+      "TownCode": "6602300",
+      "TownName": "烏日區"
+    },
+    {
+      "TownCode": "6600900",
+      "TownName": "豐原區"
+    },
+    {
+      "TownCode": "6601500",
+      "TownName": "后里區"
+    },
+    {
+      "TownCode": "6602000",
+      "TownName": "石岡區"
+    },
+    {
+      "TownCode": "6601000",
+      "TownName": "東勢區"
+    },
+    {
+      "TownCode": "6602900",
+      "TownName": "和平區"
+    },
+    {
+      "TownCode": "6601900",
+      "TownName": "新社區"
+    },
+    {
+      "TownCode": "6601700",
+      "TownName": "潭子區"
+    },
+    {
+      "TownCode": "6601800",
+      "TownName": "大雅區"
+    },
+    {
+      "TownCode": "6601600",
+      "TownName": "神岡區"
+    },
+    {
+      "TownCode": "6602400",
+      "TownName": "大肚區"
+    },
+    {
+      "TownCode": "6601300",
+      "TownName": "沙鹿區"
+    },
+    {
+      "TownCode": "6602500",
+      "TownName": "龍井區"
+    },
+    {
+      "TownCode": "6601400",
+      "TownName": "梧棲區"
+    },
+    {
+      "TownCode": "6601200",
+      "TownName": "清水區"
+    },
+    {
+      "TownCode": "6601100",
+      "TownName": "大甲區"
+    },
+    {
+      "TownCode": "6602100",
+      "TownName": "外埔區"
+    },
+    {
+      "TownCode": "6602200",
+      "TownName": "大安區"
+    }
+  ]

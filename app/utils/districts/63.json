@@ -1,0 +1,50 @@
+[
+    {
+      "TownCode": "6300400",
+      "TownName": "中正區"
+    },
+    {
+      "TownCode": "6300600",
+      "TownName": "大同區"
+    },
+    {
+      "TownCode": "6300500",
+      "TownName": "中山區"
+    },
+    {
+      "TownCode": "6300100",
+      "TownName": "松山區"
+    },
+    {
+      "TownCode": "6300300",
+      "TownName": "大安區"
+    },
+    {
+      "TownCode": "6300700",
+      "TownName": "萬華區"
+    },
+    {
+      "TownCode": "6300200",
+      "TownName": "信義區"
+    },
+    {
+      "TownCode": "6301100",
+      "TownName": "士林區"
+    },
+    {
+      "TownCode": "6301200",
+      "TownName": "北投區"
+    },
+    {
+      "TownCode": "6301000",
+      "TownName": "內湖區"
+    },
+    {
+      "TownCode": "6300900",
+      "TownName": "南港區"
+    },
+    {
+      "TownCode": "6300800",
+      "TownName": "文山區"
+    }
+  ]
